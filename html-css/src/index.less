@@ -1,0 +1,78 @@
+@import './src/helper';
+@import './src/logo.less';
+@import './src/header.less';
+@import './src/button_section.less';
+@import './src/forwhom_section.less';
+@import './src/expection_section.less';
+@import './src/edumodel_section.less';
+@import './src/free_section.less';
+@import './src/join_section.less';
+@import './src/footer.less';
+
+body {
+  background-color: #f6f7f8;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main {
+  max-width: 1124px;
+  padding: 0 10px 128px 0;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-type: none;
+  margin-left: 12px;
+}
+
+.item {
+  
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+
+  position: relative;
+  padding-left: 8px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    width: 12px;
+    height: 24px;
+    background-image: url('../../assets/icons/list-indent.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.item + .item {
+  margin-top: 12px;
+}
